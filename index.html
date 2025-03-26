@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Week 2 Assignment</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        form { max-width: 500px; margin: 20px 0; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Process Steps (Roman Numerals)</h2>
+        <ol type="I">
+            <li>Account Registration</li>
+            <li>Email Verification</li>
+            <li>Profile Completion</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Featured Image</h2>
+        <img src=https://images.pexels.com/photos/2660262/pexels-photo-2660262.jpeg?auto=compress&cs=tinysrgb&w=600 
+             alt="Beautiful Landscape" 
+             width="600" 
+             style="border-radius: 8px;">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mmakopa kekana</td>
+                    <td>123 Main St</td>
+                    <td>+27 555 123 4567</td>
+                    <td>kekana@example.com</td>
+                </tr>
+                <!-- Add 4 more rows following the same structure -->
+                <tr>
+                    <td>Tshegofatso Lobisa</td>
+                    <td>456 Oak Ave</td>
+                    <td>+27 555 765 4321</td>
+                    <td>lobisa@example.com</td>
+                </tr>
+                <tr>
+                    <td>Florah Ngwanamogale</td>
+                    <td>789 Pine Rd</td>
+                    <td>+27 555 987 6543</td>
+                    <td>florah@example.com</td>
+                </tr>
+                <tr>
+                    <td>Odirile Mmamelo</td>
+                    <td>321 Elm Blvd</td>
+                    <td>+27 555 456 7890</td>
+                    <td>odirile@example.com</td>
+                </tr>
+                <tr>
+                    <td>Tiisetso Maponya</td>
+                    <td>654 Maple Ln</td>
+                    <td>+27 555 321 0987</td>
+                    <td>tiisetso@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" 
+                       id="name" 
+                       name="name" 
+                       placeholder="Enter your full name" 
+                       required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="example@domain.com" 
+                       required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       minlength="8" 
+                       required>
+            </div>
+
+            <!-- Date -->
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" 
+                       id="dob" 
+                       name="dob" 
+                       required>
+            </div>
+
+            <!-- Dropdown (Country) -->
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="usa">South Africa</option>
+                    <option value="uk">Lesotho</option>
+                    <option value="canada">Botswana</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons (Gender) -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="form-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to Newsletter</label>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms & Conditions</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
